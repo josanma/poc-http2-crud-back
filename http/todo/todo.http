@@ -1,0 +1,28 @@
+### findAll
+GET https://localhost:3000/todo
+Accept: application/json
+
+### findOne
+GET https://localhost:3000/todo/1
+Accept: application/json
+
+### create
+POST https://localhost:3000/todo
+Content-Type: application/json
+
+{
+  "title": "Learn HTTP/2"
+}
+
+### delete
+DELETE https://localhost:3000/todo/1
+Accept: application/json
+
+### update
+PATCH https://localhost:3000/todo/1
+Content-Type: application/json
+
+{
+  "title": "Learn HTTP/2",
+  "completed": true
+}
