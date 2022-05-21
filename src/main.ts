@@ -21,6 +21,8 @@ async function bootstrap() {
     new ExpressAdapter(expressApp),
   );
 
+  app.enableCors();
+
   await app.init();
   await server.listen(3000);
 }
